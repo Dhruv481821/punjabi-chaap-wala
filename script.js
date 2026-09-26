@@ -1,0 +1,1 @@
+const buttons=document.querySelectorAll(".tabs button");const items=document.querySelectorAll(".item");buttons.forEach(button=>button.addEventListener("click",()=>{buttons.forEach(b=>b.classList.remove("active"));button.classList.add("active");const f=button.dataset.filter;items.forEach(item=>item.style.display=f==="all"||item.dataset.cat===f?"grid":"none")}));
